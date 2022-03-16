@@ -10,10 +10,12 @@ class Or(Tuple[Predicate]):
         for validator in self:
             try:
                 validator(*args, **namespace)
-                return
             except ConstraintError as exc:
                 errors.append(exc)
             except ConstraintsErrors as exc:
                 errors.extend(exc.errors)
+            else:
+                # The validator was successful, stop.
+                return
         if errors:
             raise ConstraintsErrors(*errors)
