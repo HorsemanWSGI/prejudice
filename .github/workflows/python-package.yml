@@ -29,7 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         python -m pip install flake8 pytest
         if [ -f requirements-dev.txt ]; then pip install -r requirements-dev.txt; fi
-        cython src/roughrider/predicate/*.pyx
+        cython src/prejudice/*.pyx
         pip install .[test]
     - name: Lint with flake8
       run: |
