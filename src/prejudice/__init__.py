@@ -4,10 +4,9 @@ from .utils import resolve_constraints
 from .decorator import with_predicates
 
 
-
 __all__ = [
+    'ConstraintError',
     'ConstraintsErrors',
-    'Error',
     'HTTPConstraintError',
     'Or',
     'resolve_constraints',
