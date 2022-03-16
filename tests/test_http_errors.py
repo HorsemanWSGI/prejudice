@@ -1,5 +1,5 @@
 import pytest
-from prejudice.errors import
+from prejudice.errors import (
     ConstraintError, HTTPConstraintError, ConstraintsErrors,
 )
 
