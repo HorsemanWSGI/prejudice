@@ -1,7 +1,7 @@
 import os
 from setuptools import setup, Extension, find_packages
 
-version = "0.1"
+version = "0.1.1"
 
 install_requires = [
 ]
@@ -26,9 +26,9 @@ setup(
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Zope Public License',
-        'Programming Language :: Python :: 3.8',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11'
     ],
     packages=find_packages('src'),
     package_dir={'': 'src'},
